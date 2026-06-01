@@ -12,4 +12,3 @@ sources:
         description: Tabela fonte de colaboradores com informações pessoais de cada colaborador da Banvic.
       - name: agencias
         description: Tabela fonte de agências com informações pessoais de cada agência da Banvic.
-        
