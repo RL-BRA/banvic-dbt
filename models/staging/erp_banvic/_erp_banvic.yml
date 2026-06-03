@@ -61,7 +61,7 @@ sources:
       - name: contas
         description: Tabela que armazana as contas do Banvic.
         columns:
-          - name: cod_conta
+          - name: num_conta
             data_tests:
               - unique
               - not_null
