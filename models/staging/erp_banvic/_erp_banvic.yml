@@ -1,4 +1,3 @@
-
 sources:
   - name: erp
     description: Esse é o ERP do Banvic com dados de clientes, colaboradores, contas e transações.
@@ -7,36 +6,36 @@ sources:
       - name: localidades
         description: Tabela fonte de localidades com informações sobre cidade e estado.
         columns:
-        - name: cod_localidade
-          description: Chave primária da tabela localidades.
-          data_tests:
-            - unique
-            - not_null
+          - name: cod_localidade
+            description: Chave primária da tabela localidades.
+            data_tests:
+              - unique
+              - not_null
       - name: clientes
         description: Tabela fonte de clientes com informações pessoais de cada cliente da Banvic.
         columns:
-        - name: cod_cliente
-          description: Chave primária da tabela clientes.
-          data_tests:
-            - unique
-            - not_null
+          - name: cod_cliente
+            description: Chave primária da tabela clientes.
+            data_tests:
+              - unique
+              - not_null
       - name: colaboradores
         description: Tabela fonte de colaboradores com informações pessoais de cada colaborador da Banvic.
         columns:
-        - name: cod_colaborador
-          description: Chave primária da tabela colaboradores.
-          data_tests:
-            - unique
-            - not_null
-            
+          - name: cod_colaborador
+            description: Chave primária da tabela colaboradores.
+            data_tests:
+              - unique
+              - not_null
+
       - name: agencias
         description: Tabela fonte de agências com informações pessoais de cada agência da Banvic.
         columns:
-        - name: cod_agencia
-          description: Chave primária da tabela agências.
-          data_tests:
-            - unique
-            - not_null
+          - name: cod_agencia
+            description: Chave primária da tabela agências.
+            data_tests:
+              - unique
+              - not_null
 
       - name: colaborador_agencia
         data_tests:
@@ -45,3 +44,25 @@ sources:
                 combination_of_columns:
                   - cod_colaborador
                   - cod_agencia
+      - name: propostas_credito
+        description: Tabela que armazena as propostas de crédito feitas aos clientes.
+        columns:
+          - name: cod_proposta
+            data_tests:
+              - unique
+              - not_null
+      - name: transacoes
+        description: Tabela que registra as transações realizadas nas contas dos clientes.
+        columns:
+          - name: cod_transacao
+            data_tests:
+              - unique
+              - not_null
+      - name: contas
+        description: Tabela que armazana as contas do Banvic.
+        columns:
+          - name: num_conta
+            data_tests:
+              - unique
+              - not_null
+                  
