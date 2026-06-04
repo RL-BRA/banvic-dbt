@@ -1,0 +1,23 @@
+
+models:
+  - name: stg_erp__cientes
+    description: Modelo staging com informações sobre clientes do Banvic no sistema ERP.
+    columns:
+      - name: pk_cliente
+        description: Chave primária de cliente.
+      - name: fk_localidade
+        description: Chave estrangeira de localidade.
+      - name: nome_cliente
+        description: Nome do cliente (primeiro e último).
+      - name: email_cliente
+        description: Email do cliente.
+      - name: ts_inclusao
+        description: Timestamp de inclusão do cliente.
+      - name: cpf_cnpj_cliente
+        description: Tipo de cliente.
+      - name: data_nascimento_cliente
+        description: Data de nascimento do cliente (yyyy/mm/dd).
+      - name: endereco_cliente
+        description: Endereço do cliente.
+      - name: cep_cliente
+        description: Número do codigo postal do cliente.     

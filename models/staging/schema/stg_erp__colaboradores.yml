@@ -1,0 +1,21 @@
+
+models:
+  - name: stg_erp__colaboradores
+    description: Modelo staging com informações sobre colaboradores do Banvic no sistema ERP.
+    columns:
+      - name: pk_colaborador
+        description: Chave primária do colaborador.
+      - name: fk_localidade
+        description: Chave estrangeira da localidade.
+      - name: nome_colaborador
+        description: Nome do colaborador (primeiro e último).
+      - name: email_colaborador
+        description: Email do colaborador.
+      - name: cpf_colaborador
+        description: Cadastro Pessoa Física do colaborador.
+      - name: data_nascimento_colaborador
+        description: Data de nascimento do cliente (yyyy/mm/dd).
+      - name: endereco_colaborador
+        description: Endereço do colaborador.
+      - name: cep_colaborador
+        description: Número do codigo postal do colaborador.     

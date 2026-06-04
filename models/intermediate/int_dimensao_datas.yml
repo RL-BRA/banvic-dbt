@@ -1,0 +1,24 @@
+
+models:
+  - name: int_dimensao__datas
+    description: Tabela intermediária com base nas datas geradas com intervalo fixo.
+    columns:
+      - name: pk_data
+        description: Chave primária da dimensaõ datas gerada por ordenação sequencial.
+        data_tests:
+          - unique
+          - not_null          
+      - name: data_compelta
+        description: Data no formato yyyy/mm/dd.
+      - name: dia
+        description: Dia do mês.
+      - name: mes
+        description: Mês da data.
+      - name: ano
+        description: Ano da data.
+      - name: trimestre
+        description: Trimestre do ano relacionado à data.
+      - name: dia_da_semana
+        description: Dia da semana (0 = domindgo, 6 =  sábado).
+      - name: is_weekend
+        description: Indicador booleano que identifica se a data é sabado ou domingo.
