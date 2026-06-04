@@ -1,0 +1,25 @@
+
+models:
+  - name: dim__contas
+    description: Tabela dimensão para transações financeiras realizadas nas contas do sistema ERP.
+    columns:
+      - name: pk_conta
+        description: Chave primária da conta.
+      - name: fk_cliente
+        description: Chave estrangeira que referencia o cliente da conta.
+      - name: fk_agencia
+        description: Chave estrangeira que referencia a agência de abertura da conta.
+      - name: fk_colaborador
+        description: Chave estrangeira que referencia o colaborador responsável pela abertura da conta.
+      - name: numero_conta
+        description: Número da conta bancária.
+      - name: tipo_conta
+        description: Tipo da conta (corrente, poupança, entre outras).
+      - name: ts_abertura_conta
+        description: Timestamp de abertura da conta.
+      - name: saldo_total
+        description: Saldo total atual da conta.
+      - name: saldo_disponivel
+        description: Saldo disponível para movimentação na conta.
+      - name: ts_ultimo_lancamento
+        description: Timestamp da data do último saldo da conta.  

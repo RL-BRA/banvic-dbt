@@ -1,0 +1,17 @@
+
+models:
+  - name: stg_erp__agencias
+    description: Modelo staging com informações sobre as agências do Banvic no sistema ERP.
+    columns:
+      - name: pk_agencia
+        description: Chave primária da agência.
+      - name: fk_localidade
+        description: Chave estrangeira de localidade.
+      - name: nome_agencia
+        description: Nome da agência.
+      - name: data_abertura_agencia
+        description: Data em que a agência inaugurou.
+      - name: endereco_agencia
+        description: Endereço da agência.
+      - name: tipo_agencia
+        description: Tipo de agência.

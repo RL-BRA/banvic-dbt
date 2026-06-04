@@ -1,0 +1,11 @@
+
+models:
+  - name: stg_erp__localidade
+    description: Modelo staging para localidades do sistema ERP.
+    columns:
+      - name: pk_localidade
+        description: Chave primária da localidade.
+      - name: cidade
+        description: nome da cidade.
+      - name: uf
+        description: Unidade federativa.
