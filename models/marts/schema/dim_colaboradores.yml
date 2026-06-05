@@ -1,6 +1,6 @@
 
 models:
-  - name: dim__colaboradores
+  - name: dim_colaboradores
     description: Tabela de dimensão com informações sobre os colaboradores do Banvic.
     columns:
       - name: pk_colaborador

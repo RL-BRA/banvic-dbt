@@ -1,6 +1,6 @@
 
 models:
-  - name: dim__contas
+  - name: dim_contas
     description: Tabela dimensão para transações financeiras realizadas nas contas do sistema ERP.
     columns:
       - name: pk_conta
