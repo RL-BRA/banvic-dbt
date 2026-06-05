@@ -1,6 +1,6 @@
 
 models:
-  - name: dim__clientes
+  - name: dim_clientes
     description: Tabela de dimensão com informações sobre os clientes do Banvic.
     columns:
       - name: pk_cliente

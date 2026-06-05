@@ -1,6 +1,6 @@
 
 models:
-  - name: dim__agencias
+  - name: dim_agencias
     description: Tabela de dimensão com informações sobre as agências.
     columns:
       - name: pk_agencia

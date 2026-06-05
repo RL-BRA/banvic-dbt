@@ -1,6 +1,6 @@
 
 models:
-  - name: dim__datas
+  - name: dim_datas
     description: Tabela de dimensão com base nas datas geradas com intervalo fixo, utilizada para análises temporais.
     columns:
       - name: pk_data
