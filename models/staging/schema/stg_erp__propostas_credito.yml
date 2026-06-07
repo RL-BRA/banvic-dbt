@@ -1,0 +1,28 @@
+models:
+  - name: stg_erp__propostas_credito
+    description: Modelo staging para propostas de crédito do sistema ERP do Banvic.
+    columns:
+      - name: pk_proposta
+        description: Chave primária das prospostas de crédito.
+      - name: fk_cliente
+        description: Chave estrangeira de cliente.
+      - name: fk_colaborador
+        description: Chave estrangeira de colaborador.
+      - name: data_entrada
+        description: Data de entrada da proposta.
+      - name: taxa_juros_mensal_percentual
+        description: Taxa de juros mensal de cada proposta, em percentual.
+      - name: valor_proposta
+        description: Valor monetário de cada proposta.
+      - name: valor_financiamento
+        description: Valor total do financiamento.
+      - name: valor_entrada
+        description: Valor da entrada apresentado na contratação da proposta.
+      - name: valor_prestacao
+        description: Valor da prestação mensal da proposta.
+      - name: quantidade_parcelas
+        description: Quantidade de parcelas restantes, de cada proposta.
+      - name: carencia
+        description: Tempo de carência de cada proposta.
+      - name: status_proposta
+        description: Status atual da proposta (aceita, negada, em andamento/em análise, entre outros).
